@@ -1,6 +1,12 @@
-/******************/
-/* Medial Queries */
-/******************/
+/*  Author:  Michael Galarneau        -->
+/*  Class:  UNH Bootcamp              -->
+/*  Assignment:  Responsiveness       -->
+/*  Date:  9/26/2018                  -->
+/*  Filename:  media.css              -->
+
+/*****************/
+/* Media Queries */
+/*****************/
 
 /* Hint: You won't need to use exact pixels for anything other than the container */
 
@@ -10,20 +16,6 @@
 
 .col-80 { width: 80.00%; }
 .col-20 { width: 20.00%; }
-
-/* 
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
- */
-
 
 @media screen and (max-width: 980px) {
 
@@ -35,21 +27,44 @@
   
 @media screen and (max-width: 640px) {
 
-    /* Add breakpoint for mobile phones: */
+    /* Clear all column size limits for small screens */
     [class*="col-"] {
         width: 100%;
     }
 
-    .page {
+    /* float the  header so it doesn't stick to the top */
+    header {
+        position: unset;
     }
 
+    /* float the page with the header */
+    .page {
+        position: unset;
+    }
+
+    /* Span the logo as the whole top line */
     #logo {
         width: 100%;
         clear: both;
     }
 
+    .navigation {
+        overflow: hidden;
+    }
+
     .li a {
-        margin: auto;
+        float: left;
+        display: block;
         text-align: center;
     }
-}
+    /* don't wrap the text around our page images */
+    #biopic,
+    #duckdiv {
+        float: none;
+    }
+
+    /* keep some left & right margins to match spec */
+    .page {
+        width: 90%;
+    }
+}  

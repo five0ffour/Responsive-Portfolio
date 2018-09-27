@@ -25,7 +25,10 @@ body {
 }
 
 /* Main content section - added drop shadow */
-.page {
+.page { 
+    position:  relative;
+    top: 60px;
+
     background-color: #ffffff;
     border-color: #dddddd;
 
@@ -58,8 +61,15 @@ hr {
 /* Header & Navigation Bar */
 /***************************/
 
-/* Header containing the navbar */
+/* Header containing the navbar - stick it to the top over out page of content*/
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    clear: both;
+    width: 100%;
+
     background-color: #ffffff;
     border-bottom-color: #777777;
     border-bottom-width: 1px;
@@ -67,7 +77,7 @@ header {
 }
 
 /* navigation bar:  logo & links */
-.navigation {
+.navigation {    
     background-color: white;
     margin: auto;
     overflow: auto;
@@ -96,13 +106,13 @@ header {
   }
 
 /* Hover effect - highlight background and border it */
-/* .navigation a:hover {
+.navigation a:hover {
     margin: 6px  6px 0 0 ;
     background-color: #4493dd;
     color: #ffffff;
     padding: 8px;
     box-shadow: 5px 5px 4px #2B6A67;
-  } */
+  }
 
 /* logo style on left side of navigation bar*/
 #logo {

@@ -1,0 +1,48 @@
+/* Author:  Michael Galarneau                                            */
+/* Class:  UNH Bootcamp                                                  */
+/* Assignment:  That Portfolio Though                                    */
+/* Date:  09/21/2018                                                     */
+/*                                                                       */
+/* File:  contact.css                                                    */
+/* Description:  Manage the style elements specific to the Contact page  */
+
+/*********************************/
+/*  Contact Page Specific Styles */
+/*********************************/
+
+/* Default fonts for form */
+label, input {
+    display: block;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    line-height: 1.6;
+}
+
+/* tighten up the space between the label and input box */
+label {
+    margin-bottom: 20px;
+} 
+
+/* Submit button - flat look with rounded corners */
+input[type="submit"] {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px 0 0 0;
+    border-radius: 10px;
+}
+
+/* Hover effects - twist the button and change color on hover*/
+#contactbtn:hover {
+    background-color: #4493dd;
+    box-shadow: 5px 5px 4px #2B6A67;
+}
+
+.submit:hover {
+    background-color: #4493dd;
+}

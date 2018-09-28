@@ -1,8 +1,8 @@
-/*  Author:  Michael Galarneau        -->
-/*  Class:  UNH Bootcamp              -->
-/*  Assignment:  Responsiveness       -->
-/*  Date:  9/26/2018                  -->
-/*  Filename:  media.css              -->
+/*  Author:  Michael Galarneau        */
+/*  Class:  UNH Bootcamp              */
+/*  Assignment:  Responsiveness       */
+/*  Date:  9/26/2018                  */
+/*  Filename:  media.css              */
 
 /*****************/
 /* Media Queries */
@@ -27,14 +27,20 @@
   
 @media screen and (max-width: 640px) {
 
-    /* Clear all column size limits for small screens */
+    /* Clear all column size limits for small screens to maximize screen usage */
     [class*="col-"] {
         width: 100%;
     }
 
-    /* float the  header so it doesn't stick to the top */
+    /* float the header so it doesn't stick to the top */
     header {
         position: unset;
+    }
+
+    /* float the footer so it scrolls off */
+    footer {
+        position: unset;
+        width: 100%;
     }
 
     /* float the page with the header */
@@ -52,19 +58,34 @@
         overflow: hidden;
     }
 
+    /* ensure the link bar centers under the header */
+    .navigation ul {
+        text-align: center;
+      }
+
+    /* don't inline float the link bar, give it a new line */
     .li a {
         float: left;
         display: block;
-        text-align: center;
-    }
-    /* don't wrap the text around our page images */
-    #biopic,
-    #duckdiv {
-        float: none;
     }
 
     /* keep some left & right margins to match spec */
     .page {
         width: 90%;
     }
+
+    /*******************************/
+    /* Page Specific Media Queries */
+    /*******************************/
+
+    /*------------*/
+    /* About Page */
+    /*------------*/
+
+    /* don't wrap the text around our page images */
+    #biopic,
+    #duckdiv {
+        float: none;
+    }
+
 }  

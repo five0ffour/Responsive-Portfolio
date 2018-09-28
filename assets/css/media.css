@@ -82,10 +82,11 @@
     /* About Page */
     /*------------*/
 
-    /* don't wrap the text around our page images */
+    /* don't wrap the text around our page images and center the page images */
     #biopic,
     #duckdiv {
         float: none;
+        margin: 0 25% 0 25%;
     }
 
 }  

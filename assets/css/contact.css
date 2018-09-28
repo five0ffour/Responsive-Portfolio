@@ -23,6 +23,14 @@ label {
     margin-bottom: 20px;
 } 
 
+/* Resise the form input fields to match the resizable page */
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    resize: horizontal;
+}
+
 /* Submit button - flat look with rounded corners */
 input[type="submit"] {
     border: 0;

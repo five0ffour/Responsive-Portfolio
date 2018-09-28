@@ -1,30 +1,42 @@
 /*  Author:  Michael Galarneau        */
-/*  Class:  UNH Bootcamp              */
-/*  Assignment:  Responsiveness       */
-/*  Date:  9/28/2018                  */
-/*  Filename:  media.css              */
+/*  Class:  UNH Bootcamp                                                           */
+/*  Assignment:  Responsiveness                                                    */
+/*  Date:  9/28/2018                                                               */
+/*  Filename:  media.css                                                           */
+/*                                                                                 */
+/*  Desrciption:  Handles the media query updates for all of the pages.            */
+/*  Note:  This must be the last .css listed in the <head> section of an html page */
 
-/*****************/
-/* Media Queries */
-/*****************/
+/*****************************/
+/* Media Queries Breakpoints */
+/*****************************/
 
 /* Hint: You won't need to use exact pixels for anything other than the container */
 
 /* Column widths for desktop: */
+.col-20 { width: 20.00%; }
 .col-33 { width: 33.34%; }
 .col-66 { width: 66.66%; }
-
 .col-80 { width: 80.00%; }
-.col-20 { width: 20.00%; }
 
+/* 980px - left align the page and logo */
 @media screen and (max-width: 980px) {
 
+    .col-80 { width: 75.00% }
 }
 
+/* 768px - sHover the margin towards the left side                     */
 @media screen and (max-width: 768px) {
+
+    /* Put in a breakpoint to stretch the margin out a bit */
+    /* for both headers and page                           */
+    /* keep some left & right margins to match spec */
+    .col-80 { width: 70%;    }
 
 }
   
+/* 640px */
+/* Remove floats,  make maximum width,  scroll off headers & footers */
 @media screen and (max-width: 640px) {
 
     /* Clear all column size limits for small screens to maximize screen usage */

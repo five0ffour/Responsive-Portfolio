@@ -40,35 +40,24 @@
                 <hr>
                 <ul id="gallery">
                     <li>
-                        <img class="btnimg" src="assets/images/cigna2.jpg" alt="Cigna logo">
+                        <img id="wordguess" class="btnimg" src="assets/images/cityscape-btn.png" alt="WordGuess logo">
+                        <p class="btnlbl">Sci-Fi Word Guess</p>
+                    </li>
+
+                    <li>
+                        <img id="cigna" class="btnimg" src="assets/images/cigna2.jpg" alt="Cigna logo">
                         <p class="btnlbl">Cigna Healthcare</p>
                     </li>
 
                     <li>
-                        <img class="btnimg" src="assets/images/UNH.png" alt="UNH logo">
+                        <img id="unh" class="btnimg" src="assets/images/UNH.png" alt="UNH logo">
                         <p class="btnlbl">UNH Bootcamp</p>
                     </li>
 
                     <li>
-                        <img class="btnimg" src="assets/images/CCSU.jpg" alt="CCSU logo">
+                        <img id="ccsu" class="btnimg" src="assets/images/CCSU.jpg" alt="CCSU logo">
                         <p class="btnlbl">CCSU</p>
                     </li>
-
-                    <li>
-                        <img class="btnimg" src="assets/images/xbox.jpg" alt="XBox Logo">
-                        <p class="btnlbl">Video Games</p>
-                    </li>
-
-                    <li>
-                        <img class="btnimg" src="assets/images/rpg-game.jpg" alt="Dice">
-                        <p class="btnlbl">Board Games</p>
-                    </li>
-
-                    <li>
-                        <img class="btnimg" src="assets/images/ssa2.jpg" alt="SSA logo">
-                        <p class="btnlbl">Seacoast Swimming</p>
-                    </li>
-
                 </ul>
             </div>
         </section>
@@ -77,6 +66,25 @@
     <footer>
         <p>&copy; 2018 Michael Galarneau, All Rights Reserved. </p>
     </footer>
+
+    <!-- Button handlers to redirect the pages -->
+    <script type="text/javascript">
+        document.getElementById("cigna").onclick = function () {
+            location.href = "https://www.cigna.com";
+        };
+
+        document.getElementById("unh").onclick = function () {
+            location.href = "https://codingbootcamp.unh.edu/";
+        };
+
+        document.getElementById("ccsu").onclick = function () {
+            location.href = "https://www2.ccsu.edu";
+        };
+
+        document.getElementById("wordguess").onclick = function () {
+            location.href = "https://five0ffour.github.io/WordGuess-Game";
+        };
+    </script>
 
 </body>
 
